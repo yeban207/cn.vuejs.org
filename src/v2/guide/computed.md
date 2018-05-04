@@ -275,7 +275,7 @@ var watchExampleVM = new Vue({
     getAnswer: _.debounce(
       function () {
         var vm = this
-        if (this.question.indexOf('?') === -1) {
+        if (this.question.indexOf('') === -1) {
           vm.answer = 'Questions usually contain a question mark. ;-)'
           return
         }
